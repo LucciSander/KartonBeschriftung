@@ -47,7 +47,7 @@ def makeLable(filename, MaschNr, AuftrNr, SeriNr):
 
 	myCanvas.save()
 
-
+# Welche Art von IPC OK oder Beckhoff
 art = input("OKIPC = 1 \nBeckhoff-IPC = 2\n\n")
 
 
