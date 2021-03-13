@@ -47,11 +47,23 @@ def makeLable(filename, MaschNr, AuftrNr, SeriNr):
 
 	myCanvas.save()
 
-maschine = input("Maschinennummer und IPC-Bezeichnung:   ")
-auftrag = input("Auftragsnummer:    ")
-IPC = input("IPC-Seriennummer:    ")
 
-makeLable("beschriftung.pdf",maschine, auftrag, IPC )
+art = input("OKIPC = 1 \nBeckhoff-IPC = 2\n\n")
 
 
 
+
+
+if art == "1":
+	maschine = input("Maschinennummer und IPC-Bezeichnung:   ")
+	auftrag = input("Auftragsnummer:    ")
+	IPC = input("IPC-Seriennummer:    ")
+	makeLable("beschriftung.pdf",maschine, auftrag, IPC )
+elif art == "2":
+	exit()
+	maschine = input("Maschinennummer und IPC-Bezeichnung:   ")
+	auftrag = input("Auftragsnummer:    ")
+else:
+	exit()
+	
+	
