@@ -31,7 +31,7 @@ def makeLable(filename, MaschNr, AuftrNr, SeriNr):
 	myCanvas.drawString((width - text_width) / 2 ,95*mm, text=MaschNr)
 	myCanvas.drawString((width - text_width) / 2 ,height/2 + 95*mm, text=MaschNr)
 
-	#Auftragsnumemr
+	#Auftragsnummer
 	myCanvas.setFont("Helvetica",48)
 	text_width = stringWidth(MaschNr,"Helvetica", 48 )
 	myCanvas.drawString((width - text_width) / 2 ,65*mm, text=AuftrNr)
