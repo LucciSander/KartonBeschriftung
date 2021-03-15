@@ -58,7 +58,7 @@ if art == "1":
 	maschine = input("Maschinennummer und IPC-Bezeichnung:   ")
 	auftrag = input("Auftragsnummer:    ")
 	IPC = input("IPC-Seriennummer:    ")
-	makeLable("beschriftung.pdf",maschine, auftrag, IPC )
+	makeLable("beschriftung{}.pdf".format(maschine),maschine, auftrag, IPC )
 elif art == "2":
 	exit()
 	maschine = input("Maschinennummer und IPC-Bezeichnung:   ")
